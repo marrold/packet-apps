@@ -1,0 +1,11 @@
+version: "3"
+services:
+
+  cave-adventure:
+    container_name: cave-adventure
+    image: marrold/cave-adventure
+    restart: always
+    environment:
+      - LISTEN_IP=0.0.0.0
+      - LISTEN_PORT=9001
+      - TERM_WIDTH=40
