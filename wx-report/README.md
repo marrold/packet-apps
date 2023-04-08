@@ -1,4 +1,5 @@
 
+
 # wx-report
 
 Returns a basic weather report to connected users, initially for a defined city, and then prompts users if they wish to look up the weather for another City.
@@ -31,10 +32,10 @@ Configuration can be supplied as arguments or environment variables:
 
 | Short | Long | Env Var| Description | Default                                                           |
 |--------------|---------------|--|---------------------------------------------------------------------------|--|
-| -h         | --help     |  N/A | Show the help message and exit   | N/A                                      |
-| -i         | --ip-address | IP_ADDRESS | The IP address to listen on   | 127.0.0.1 | 
-| -p         | --port | PORT | The port number to listen on (default: 9000)  | 9000 |
-| -c         | --city | CITY | The home city to get the weather for (default: 'aylesbury') | Aylesbury |
+| -h         | `--help`    |  N/A | Show the help message and exit   | N/A                                      |
+| -i         | `--ip-address` | IP_ADDRESS | The IP address to listen on   | 127.0.0.1 |
+| -p         | `--port` | PORT | The port number to listen on (default: 9000)  | 9000 |
+| -c         | `--city` | CITY | The home city to get the weather for (default: 'aylesbury') | Aylesbury |
 
 
 ## License

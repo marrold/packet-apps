@@ -24,16 +24,11 @@ parser.add_argument('-c', '--city', type=str, default=os.getenv('CITY', DEFAULT_
 # Parse the arguments
 args = parser.parse_args()
 
-# Print the help message if requested
-#if args.help:
-#    parser.print_help()
-#    exit()
 
 # Get the IP address, port number, and home city from the arguments or environment variables
-IP_ADDRESS = args.ip_address or os.getenv('IP_ADDRESS', DEFAULT_IP_ADDRESS)
-PORT = args.port or int(os.getenv('PORT', DEFAULT_PORT))
-CITY = args.city or os.getenv('CITY', DEFAULT_CITY)
-CITY = CITY.replace(" ", "+") # Replace whitespace for +
+IP_ADDRESS = os.getenv('IP_ADDRESS', args.ip_address)
+PORT = int(os.getenv('PORT', args.port))
+CITY = os.getenv('CITY', args.city).replace(" ", "+") # Replace whitespace for +
 
 # Create a TCP socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
