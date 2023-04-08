@@ -5,6 +5,9 @@ Returns a basic weather report to connected users, initially for a defined city,
 
 The data and formatting is pulled from [wttr.in](https://wttr.in/)
 
+[Github](https://github.com/marrold/packet-apps)
+[Docker Hub](https://hub.docker.com/repository/docker/marrold/wx-report)
+
 ## Usage
 
 ### Docker
