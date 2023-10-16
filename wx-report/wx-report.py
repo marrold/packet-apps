@@ -14,7 +14,6 @@ parser = argparse.ArgumentParser(description='A simple weather server')
 
 # Add the arguments
 parser.add_argument('-i', '--ip-address', type=str, default=os.getenv('IP_ADDRESS', DEFAULT_IP_ADDRESS),
-
                     help=f'the IP address to listen on (default: {os.getenv("IP_ADDRESS", DEFAULT_IP_ADDRESS)})')
 parser.add_argument('-p', '--port', type=int, default=int(os.getenv('PORT', DEFAULT_PORT)),
                     help=f'the port number to listen on (default: {int(os.getenv("PORT", DEFAULT_PORT))})')
